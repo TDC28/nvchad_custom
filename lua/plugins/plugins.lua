@@ -31,7 +31,7 @@ return {
   {
     "stevearc/conform.nvim",
     config = function()
-      require "lua.configs.conform"
+      require "configs.conform"
     end,
   },
 
