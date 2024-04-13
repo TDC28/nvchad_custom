@@ -12,7 +12,7 @@ return {
   	opts = {
   		ensure_installed = {
   			"lua-language-server", "stylua",
-  			"html-lsp", "css-lsp", "ruff-lsp"
+  			"html-lsp", "css-lsp", "pyright"
   		},
   	},
   },
@@ -22,7 +22,8 @@ return {
   	opts = {
   		ensure_installed = {
         "vim", "lua", "vimdoc",
-        "html", "css", "python"
+        "html", "css", "python",
+        "latex"
   		},
   	},
   },
