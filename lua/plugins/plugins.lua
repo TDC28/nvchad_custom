@@ -10,7 +10,7 @@ return {
 
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -22,6 +22,10 @@ return {
         "vimdoc",
         "html",
         "css",
+        "javascript",
+        "typescript",
+        "json",
+        "bash",
         "python",
         "latex",
       },
@@ -45,7 +49,7 @@ return {
 
   {
     "nvim-tree/nvim-tree.lua",
-    opts = overrides.nvimtree
+    opts = overrides.nvimtree,
   },
 
   {
@@ -66,5 +70,23 @@ return {
     config = function()
       require("ibl").setup()
     end,
+  },
+
+  {
+    "karb94/neoscroll.nvim",
+    event = "BufRead",
+    config = function()
+      require("neoscroll").setup {
+        mappings = {
+          "<C-u>",
+          "<C-d>",
+        },
+      }
+    end,
+  },
+
+  {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
   },
 }
