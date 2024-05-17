@@ -9,7 +9,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     json = { "prettier" },
-    sh = { "shfmt" },
+    bash = { "shfmt" },
   },
 }
 

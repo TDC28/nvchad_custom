@@ -5,14 +5,18 @@
 local M = {}
 
 M.ui = {
-  theme = "gruvbox",
+  theme = "ayu_dark",
+
+  telescope = { style = "borderless" }, -- bordered/borderless
 
   statusline = {
     theme = "minimal",
+    separator_style = "round"
   },
 
   cmp = {
     sytle = "flat_dark",
+    icons = true,
   },
 
   nvdash = {
