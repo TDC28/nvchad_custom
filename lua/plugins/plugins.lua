@@ -1,13 +1,22 @@
 local overrides = require "configs.overrides"
 return {
   {
+    "rcarriga/nvim-notify",
+    event = "VeryLazy",
+    opts = {
+      background_colour = "#000000"
+    }
+  },
+  {
     "folke/noice.nvim",
     event = "VeryLazy",
-    opts = {},
     dependencies = {
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
     },
+    config = function()
+      require("configs.noice")
+    end
   },
   {
     "xiyaowong/transparent.nvim",
