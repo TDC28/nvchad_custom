@@ -11,6 +11,11 @@ local options = {
     json = { "prettier" },
     bash = { "shfmt" },
   },
+
+  format_on_save = {
+    timeout_ms = 500,
+    lsp_fallback = true,
+  },
 }
 
 require("conform").setup(options)
