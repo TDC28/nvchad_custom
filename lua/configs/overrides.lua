@@ -31,9 +31,9 @@ M.nvimtree = {
     float = {
       enable = true,
       open_win_config = {
-        border = 'rounded'
-      }
-    }
+        border = "rounded",
+      },
+    },
   },
   filters = {
     dotfiles = true,

@@ -9,10 +9,13 @@ M.ui = {
 
   telescope = { style = "borderless" }, -- bordered/borderless
 
-
   statusline = {
     theme = "minimal",
-    separator_style = "round"
+    separator_style = "round",
+  },
+
+  tabufline = {
+    order = { "buffers", "tabs", "btns" },
   },
 
   cmp = {
