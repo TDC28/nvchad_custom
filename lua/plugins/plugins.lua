@@ -1,12 +1,18 @@
 local overrides = require "configs.overrides"
 return {
   {
+    "lervag/vimtex",
+    ft = "tex",
+    init = function() end,
+  },
+  {
     "rcarriga/nvim-notify",
     event = "VeryLazy",
     opts = {
-      background_colour = "#000000"
-    }
+      background_colour = "#000000",
+    },
   },
+
   {
     "folke/noice.nvim",
     event = "VeryLazy",
@@ -15,20 +21,23 @@ return {
       "rcarriga/nvim-notify",
     },
     config = function()
-      require("configs.noice")
-    end
+      require "configs.noice"
+    end,
   },
+
   {
     "xiyaowong/transparent.nvim",
     lazy = false,
     config = function()
       require("transparent").setup()
-    end
+    end,
   },
+
   {
     "tpope/vim-fugitive",
-    event = "BufRead"
+    event = "BufRead",
   },
+
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -63,6 +72,7 @@ return {
 
   {
     "stevearc/conform.nvim",
+    event = "BufRead",
     config = function()
       require "configs.conform"
     end,

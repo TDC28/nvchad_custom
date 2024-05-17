@@ -27,6 +27,14 @@ M.cmp = {
 }
 
 M.nvimtree = {
+  view = {
+    float = {
+      enable = true,
+      open_win_config = {
+        border = 'rounded'
+      }
+    }
+  },
   filters = {
     dotfiles = true,
   },

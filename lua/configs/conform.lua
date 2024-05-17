@@ -10,10 +10,11 @@ local options = {
     html = { "prettier" },
     json = { "prettier" },
     bash = { "shfmt" },
+    tex = { "latexindent" },
   },
 
   format_on_save = {
-    timeout_ms = 500,
+    timeout_ms = 10000,
     lsp_fallback = true,
   },
 }
