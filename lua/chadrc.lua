@@ -1,13 +1,15 @@
--- This file  needs to have same structure as nvconfig.lua
--- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua
-
 ---@type ChadrcConfig
 local M = {}
 
 M.ui = {
+  transparency = true,
+  cmp = {
+    icons = true,
+  },
+
   theme = "ayu_dark",
 
-  telescope = { style = "borderless" }, -- bordered/borderless
+  -- telescope = { style = "bordered" }, -- bordered/borderless
 
   statusline = {
     theme = "minimal",
@@ -18,18 +20,14 @@ M.ui = {
     order = { "buffers", "tabs", "btns" },
   },
 
-  cmp = {
-    sytle = "flat_dark",
-    icons = true,
-  },
-
   nvdash = {
     load_on_startup = true,
   },
 
+  -- Uncomment and customize the highlight overrides if needed
   -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
+  --   Comment = { italic = true },
+  --   ["@comment"] = { italic = true },
   -- },
 }
 

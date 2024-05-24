@@ -8,7 +8,6 @@ local options = {
     typescriptreact = { "prettier" },
     css = { "prettier" },
     html = { "prettier" },
-    json = { "prettier" },
     bash = { "shfmt" },
     tex = { "latexindent" },
   },

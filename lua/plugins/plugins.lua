@@ -1,10 +1,20 @@
 local overrides = require "configs.overrides"
 return {
   {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  },
+
+  {
     "lervag/vimtex",
     ft = "tex",
     init = function() end,
   },
+
   {
     "rcarriga/nvim-notify",
     event = "VeryLazy",
@@ -23,6 +33,13 @@ return {
     config = function()
       require "configs.noice"
     end,
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
   },
 
   {
