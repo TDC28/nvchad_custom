@@ -42,13 +42,13 @@ return {
     opts = {},
   },
 
-  {
-    "xiyaowong/transparent.nvim",
-    lazy = false,
-    config = function()
-      require("transparent").setup()
-    end,
-  },
+  -- {
+  --   "xiyaowong/transparent.nvim",
+  --   lazy = false,
+  --   config = function()
+  --     require("transparent").setup()
+  --   end,
+  -- },
 
   {
     "tpope/vim-fugitive",
