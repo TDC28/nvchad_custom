@@ -42,14 +42,6 @@ return {
     opts = {},
   },
 
-  -- {
-  --   "xiyaowong/transparent.nvim",
-  --   lazy = false,
-  --   config = function()
-  --     require("transparent").setup()
-  --   end,
-  -- },
-
   {
     "tpope/vim-fugitive",
     event = "BufRead",
@@ -83,6 +75,9 @@ return {
         "bash",
         "python",
         "latex",
+        "regex",
+        "markdown",
+        "markdown_inline",
       },
     },
   },

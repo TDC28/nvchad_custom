@@ -3,6 +3,7 @@ local M = {}
 
 M.ui = {
   transparency = true,
+
   cmp = {
     icons = true,
   },
