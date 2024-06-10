@@ -58,10 +58,12 @@ M.mason = {
     "stylua",
     "css-lsp",
     "html-lsp",
-    "prettier",
     "shfmt",
     "pyright",
-    "jsonls",
+    "json-lsp",
+    "taplo",
+    "black",
+    "texlab",
   },
 }
 

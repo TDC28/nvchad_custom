@@ -78,6 +78,7 @@ return {
         "regex",
         "markdown",
         "markdown_inline",
+        "toml",
       },
     },
   },
