@@ -8,7 +8,7 @@ M.ui = {
     icons = true,
   },
 
-  theme = "ayu_dark",
+  theme = "tokyonight",
 
   -- telescope = { style = "bordered" }, -- bordered/borderless
 
