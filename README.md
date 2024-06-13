@@ -15,10 +15,8 @@
 > [!NOTE]
 > Backup your current config before starting the installation process
 ```bash
-cd ~/.config
-git clone https://github.com/TDC28/nvchad_custom.git
-mv nvchad_custom/ nvim/
-nvim nvim/init.lua 
+git clone https://github.com/TDC28/nvchad_custom.git ~/.config/nvim
+nvim ~/.config/nvim/init.lua 
 ```
 
 This will install a plugin manager and all plugins.
