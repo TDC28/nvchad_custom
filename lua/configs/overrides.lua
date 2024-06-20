@@ -56,12 +56,8 @@ M.mason = {
   ensure_installed = {
     "lua-language-server",
     "stylua",
-    "css-lsp",
-    "html-lsp",
     "shfmt",
     "pyright",
-    "json-lsp",
-    "taplo",
     "black",
     "texlab",
   },

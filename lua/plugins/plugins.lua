@@ -9,16 +9,14 @@ return {
 			"LazyGitFilter",
 			"LazyGitFilterCurrentFile",
 		},
-		-- optional for floating window border decoration
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 		},
-		-- setting the keybinding for LazyGit with 'keys' is recommended in
-		-- order to load the plugin when the command is run for the first time
 		keys = {
 			{ "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
 		},
 	},
+
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -32,14 +30,6 @@ return {
 		"lervag/vimtex",
 		ft = "tex",
 		init = function() end,
-	},
-
-	{
-		"rcarriga/nvim-notify",
-		event = "VeryLazy",
-		opts = {
-			background_colour = "#000000",
-		},
 	},
 
 	{
@@ -118,7 +108,7 @@ return {
 
 	{
 		"christoomey/vim-tmux-navigator",
-		event = "InsertEnter",
+		event = "VeryLazy",
 	},
 
 	{
