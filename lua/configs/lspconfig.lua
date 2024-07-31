@@ -4,7 +4,7 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "bashls", "html", "cssls", "lua_ls", "texlab", "pyright", "clangd"}
+local servers = { "bashls", "html", "cssls", "lua_ls", "texlab", "pyright", "clangd", "tailwindcss"}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
